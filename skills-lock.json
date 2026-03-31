@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "web-shader-extractor": {
+      "source": "lixiaolin94/skills",
+      "sourceType": "github",
+      "computedHash": "81d2ad21327c2d544423e368c164355203575ad183b830d0e5d210fa67f752f9"
+    }
+  }
+}
