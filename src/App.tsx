@@ -180,16 +180,12 @@ export default function App() {
                 transition={{ duration: 0.6, delay: 1.1, ease: "easeOut" }}
                 className="mt-10 flex flex-wrap items-center justify-center gap-4"
               >
-                <Button aria-label="Get started">
-                  查看详情
-                  <ArrowUpRight className="size-4" />
-                </Button>
                 <button
-                  className="inline-flex items-center gap-2 rounded-full px-3 py-3 font-body text-sm font-light text-white/80 transition-colors duration-200 hover:text-white"
+                  className="inline-flex items-center gap-3 rounded-full px-2 py-2 font-body text-[1.05rem] font-light text-white/85 transition-colors duration-200 hover:text-white"
                   aria-label="Watch the film"
                   onClick={() => setIsFilmOpen(true)}
                 >
-                  <Play className="size-4 fill-current" />
+                  <Play className="size-5 fill-current text-white/95" />
                   Watch the Film
                 </button>
               </motion.div>

@@ -1,28 +1,23 @@
-# GitHub Pages Deploy
+# GitHub Pages Auto Deploy
 
-## One-time setup
+This project is configured to deploy automatically with GitHub Actions.
 
-1. Create a GitHub repository for this project.
-2. Push the project to the repository's default branch.
+## One-time GitHub setting
 
-## Deploy
+In the repository:
+
+1. Open `Settings` -> `Pages`
+2. Set `Source` to `GitHub Actions`
+
+## Daily update flow
 
 Run:
 
 ```bash
-npm install
-npm run deploy
+cd "/Users/bytedance/Desktop/心生一计/Dream’s Digital Garden"
+git add .
+git commit -m "update site"
+git push
 ```
 
-This publishes the built site from `dist/` to the `gh-pages` branch.
-
-## GitHub repo settings
-
-In GitHub:
-
-1. Open `Settings` -> `Pages`
-2. Set `Source` to `Deploy from a branch`
-3. Choose branch `gh-pages`
-4. Choose folder `/ (root)`
-
-After that, GitHub Pages will serve the site from the published branch.
+After pushing to `main`, GitHub Actions will build and deploy the site automatically.
