@@ -393,7 +393,7 @@ export default function App() {
 
               <video
                 ref={filmRef}
-                src={asset("/videos/feature-convert.mp4")}
+                src={asset("/videos/film-preview.mp4")}
                 className="aspect-video w-full rounded-[1.5rem] bg-black object-cover"
                 controls
                 autoPlay
