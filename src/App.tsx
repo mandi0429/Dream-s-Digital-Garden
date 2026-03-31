@@ -12,6 +12,9 @@ import { HlsVideo } from "@/components/hls-video";
 import { Button } from "@/components/ui/button";
 
 const navigation = ["Home", "Services", "Work", "Process", "Pricing"];
+const asset = (path: string) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+
 const partners = [
   "张梦",
   "张峰源",
@@ -39,7 +42,7 @@ const featureRows = [
     media:
       {
         type: "video",
-        src: "/videos/feature-convert.mp4",
+        src: asset("/videos/feature-convert.mp4"),
       } satisfies FeatureMedia,
   },
   {
@@ -49,7 +52,7 @@ const featureRows = [
     media:
       {
         type: "image",
-        src: "/images/knowledge-base.png",
+        src: asset("/images/knowledge-base.png"),
       } satisfies FeatureMedia,
   },
   {
@@ -59,7 +62,7 @@ const featureRows = [
     media:
       {
         type: "image",
-        src: "/images/profile-archive.png",
+        src: asset("/images/profile-archive.png"),
       } satisfies FeatureMedia,
   },
 ];
@@ -123,7 +126,7 @@ export default function App() {
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4">
           <a href="#home" className="shrink-0">
             <img
-              src="/images/logo-mark.png"
+              src={asset("/images/logo-mark.png")}
               alt="Studio"
               className="size-12 rounded-full object-cover"
             />
@@ -390,7 +393,7 @@ export default function App() {
 
               <video
                 ref={filmRef}
-                src="/videos/feature-convert.mp4"
+                src={asset("/videos/feature-convert.mp4")}
                 className="aspect-video w-full rounded-[1.5rem] bg-black object-cover"
                 controls
                 autoPlay
